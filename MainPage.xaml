@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E230138.MainPage"
+             Title="Inicio"
+             BackgroundColor="#FCE7F3">
+
+    <ScrollView>
+        <Grid Padding="24"
+              VerticalOptions="Center">
+
+            <Border BackgroundColor="#FFFFFF"
+                    Stroke="#FBCFE8"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 26"
+                    Padding="26">
+
+                <VerticalStackLayout Spacing="22">
+
+                    <!-- Encabezado -->
+                    <VerticalStackLayout Spacing="8"
+                                         HorizontalOptions="Center">
+
+                        <Border BackgroundColor="#FCE7F3"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 24"
+                                Padding="18"
+                                WidthRequest="90"
+                                HeightRequest="90">
+
+                            <Image Source="dotnet_bot.png"
+                                   HeightRequest="55"
+                                   WidthRequest="55"
+                                   Aspect="AspectFit"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Border>
+
+                        <Label Text="¡Bienvenido!"
+                               FontSize="30"
+                               FontAttributes="Bold"
+                               TextColor="#831843"
+                               HorizontalOptions="Center"/>
+
+                        <Label Text="Nos alegra tenerte aquí"
+                               FontSize="14"
+                               TextColor="#9D6480"
+                               HorizontalOptions="Center"/>
+
+                    </VerticalStackLayout>
+
+                    <BoxView HeightRequest="1"
+                             Color="#FCE7F3"/>
+
+                    <!-- Mensaje principal -->
+                    <VerticalStackLayout Spacing="12">
+
+                        <Label Text="Tu aplicación"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#BE185D"
+                               HorizontalOptions="Center"/>
+
+                        <Label Text="Explora las funcionalidades de nuestra aplicación y disfruta de una experiencia sencilla, agradable y fácil de utilizar."
+                               FontSize="14"
+                               TextColor="#9D6480"
+                               HorizontalTextAlignment="Center"
+                               LineHeight="1.4"/>
+
+                    </VerticalStackLayout>
+
+                    <!-- Tarjeta informativa -->
+                    <Border BackgroundColor="#FFF1F7"
+                            Stroke="#FBCFE8"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 16"
+                            Padding="16">
+
+                        <VerticalStackLayout Spacing="8">
+
+                            <Label Text="♡  ¡Todo listo!"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="#BE185D"
+                                   HorizontalOptions="Center"/>
+
+                            <Label Text="Has iniciado correctamente. Ya puedes comenzar a utilizar la aplicación."
+                                   FontSize="13"
+                                   TextColor="#9D6480"
+                                   HorizontalTextAlignment="Center"/>
+
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Botón contador -->
+                    <Button x:Name="CounterBtn"
+                            Text="HAZ CLIC AQUÍ"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            BackgroundColor="#DB2777"
+                            TextColor="White"
+                            FontSize="14"
+                            FontAttributes="Bold"
+                            CornerRadius="13"
+                            HeightRequest="52"
+                            HorizontalOptions="Fill"
+                            Clicked="OnCounterClicked"/>
+
+                    <!-- Pie -->
+                    <Label Text="♡  Gracias por visitarnos  ♡"
+                           FontSize="11"
+                           TextColor="#D48BAE"
+                           HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
